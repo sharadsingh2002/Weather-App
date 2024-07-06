@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="bg-slate-900 h-screen flex justify-center items-center font-sans ">
+
+    <div class="w-full max-w-4xl bg-gradient-to-r from-[#88B0E1] to-[#3069A7] md:flex justify-center items-center md:flex-col p-6 sm:p-10 md:p-20 gap-6 rounded-3xl shadow-2xl h-auto">
+
+        <h1 class="text-4xl md:-mt-10 md:mb-6 text-center mb-6"><span class="text-gray-50">Weather</span> App</h1>
+
+        <div class="flex items-center flex-col sm:flex-row  gap-6">
+            <input type="text" id="input" placeholder="Enter your city name" class="w-72 h-10 rounded-xl px-3">
+            <button class="px-6 py-2 sm:w-auto bg-red-50 rounded-xl" id="Search">Search</button>
+        </div>
+
+        <div class="text-center" id="TextMsg">
+            <h1 class="text-3xl ">Get the weather details of any city <br> Right Now!</h1>
+        </div>
+
+
+        <div class="hidden items-center p-5 justify-between w-auto gap-28 " id="maincontent">
+            <div>
+                <img id="weatherIcon" src="" alt="" class="h-56 object-cover">
+            </div>
+
+            <div class="h-auto ">
+                <div class="flex text-center flex-col gap-2 mb-5">
+                    <h3 id="temp" class="text-6xl text-white font-normal"></h3>
+                    <h5 id="C_text" class="text-white font-normal"></h5>
+                    <h1 id="city" class="text-white font-normal"></h1>
+                    <h2 id="country" class="text-white font-normal"></h2>
+                </div>
+
+                <div class="flex gap-5">
+                    <div class="flex items-center gap-2" id="humidity-container">
+                        <img id="humidityIcon" src="" alt="" class=" h-12">
+                        <span id="humidity" class="text-white"></span>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <img id="windIcon" src="" alt="" class=" h-12">
+                        <p id="wind" class="text-white font-normal"></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
